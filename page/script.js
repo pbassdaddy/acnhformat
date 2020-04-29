@@ -1,16 +1,19 @@
 $(document).ready(function(){
-
-    var lines = 6;
-   
-
-    $('#countMeOne').keydown(function(e) {
-
+    
+    var lines = 10;
+    var linesUsed = $('#linesUsed');
+    
+    $('#countMe').keydown(function(e) {
+        
         newLines = $(this).val().split("\n").length;
-       
-
+        linesUsed.text(newLines);
+        
         if(e.keyCode == 13 && newLines >= lines) {
+            linesUsed.css('color', 'red');
             return false;
         }
-        
+        else {
+            linesUsed.css('color', '');
+        }
     });
 });
