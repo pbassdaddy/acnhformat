@@ -48,3 +48,26 @@ h1 {
   font-style: 26px;
   margin: 10px;
 }
+
+jsfiddle
+html:
+ <textarea id="countMe" cols="30" rows="5"></textarea><br />
+ 
+ js:
+ $(document).ready(function(){
+    
+    var lines = 10;
+    var linesUsed = $('#linesUsed');
+    
+    $('#countMe').keydown(function(e) {
+        
+        newLines = $(this).val().split("\n").length;
+        linesUsed.text(newLines);
+        
+        if(e.keyCode == 13 && newLines >= lines) {
+            linesUsed.css('color', 'red');
+            return false;
+        }
+        
+    });
+});
