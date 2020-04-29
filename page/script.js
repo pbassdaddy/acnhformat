@@ -1,4 +1,4 @@
-function(){
+(function(){
     
     var lines = 10;
     var linesUsed = $('#linesUsed');
