@@ -11,10 +11,13 @@ body {
   font-family: Helvetica neue, roboto;
 }
 
-textarea  
-{  
-   font-family:"Times New Roman", Times, serif;  
-   font-size: 12px;   
+textarea {
+   font-family:"Times New Roman", Times, serif;
+   font-size: 50px;
+}
+
+p {
+  font-size: 35px;
 }
 
 h1 {
