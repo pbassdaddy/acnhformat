@@ -1,19 +1,13 @@
-(function(){
-    
-    var lines = 10;
-    var linesUsed = $('#linesUsed');
-    
+$(document).ready(function(){
+
+    var lines = 6;
+
     $('#countMe').keydown(function(e) {
-        
+
         newLines = $(this).val().split("\n").length;
-        linesUsed.text(newLines);
         
         if(e.keyCode == 13 && newLines >= lines) {
-            linesUsed.css('color', 'red');
             return false;
-        }
-        else {
-            linesUsed.css('color', '');
         }
     });
 });
