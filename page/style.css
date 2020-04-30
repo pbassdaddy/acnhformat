@@ -2,7 +2,6 @@ body {
   background: white;
   color: #323232;
   font-weight: 300;
-  font-size: large;
   height: 100vh;
   margin: 0;
   display: flex;
@@ -10,6 +9,12 @@ body {
   justify-content: center;
   text-align: center;
   font-family: Helvetica neue, roboto;
+}
+
+textarea  
+{  
+   font-family:"Times New Roman", Times, serif;  
+   font-size: 12px;   
 }
 
 h1 {
