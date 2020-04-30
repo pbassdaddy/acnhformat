@@ -2,6 +2,7 @@ body {
   background: white;
   color: #323232;
   font-weight: 300;
+  font-size: large;
   height: 100vh;
   margin: 0;
   display: flex;
